@@ -113,7 +113,7 @@ auto depth_first_search(const Graph<T>& G, unsigned start)
 
 			for (auto& e : G.edges(current_vertex))
 			{
-				// 인접한 정점 중에서 방문하지 않은 정점이 있다면 큐에 추가
+				// 인접한 정점 중에서 방문하지 않은 정점이 있다면 스택에 추가
 				if (visited.find(e.dst) == visited.end())
 				{
 					stack.push(e.dst);
@@ -134,8 +134,8 @@ int main()
 	cout << "[입력 그래프]" << endl;
 	cout << G << endl;
 
-	// 1번 정점부터 BFS 실행 & 방문 순서 출력
-	cout << "[BFS 방문 순서]" << endl;
+	// 1번 정점부터 DFS 실행 & 방문 순서 출력
+	cout << "[DFS 방문 순서]" << endl;
 	auto dfs_visit_order = depth_first_search(G, 1);
 	for (auto v : dfs_visit_order)
 		cout << v << endl;
