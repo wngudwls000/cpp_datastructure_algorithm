@@ -126,7 +126,7 @@ int main()
 	vector<Edge> edges4;
 	vector<Edge> edges5;
 
-	if (read_file("testcase1.txt", N1, edges1))
+	if (read_file("robot_testcase1.txt", N1, edges1))
 	{
 		vector<int> distance = BellmanFord(edges1, N1 * N1, 0);
 
@@ -135,7 +135,7 @@ int main()
 		else
 			cout << -1 * distance[N1 * N1 - 1] << endl;
 	}
-	if (read_file("testcase2.txt", N2, edges2))
+	if (read_file("robot_testcase2.txt", N2, edges2))
 	{
 		vector<int> distance = BellmanFord(edges2, N2 * N2, 0);
 
@@ -144,7 +144,7 @@ int main()
 		else
 			cout << -1 * distance[N2 * N2 - 1] << endl;
 	}	
-	if (read_file("testcase3.txt", N3, edges3))
+	if (read_file("robot_testcase3.txt", N3, edges3))
 	{
 		vector<int> distance = BellmanFord(edges3, N3 * N3, 0);
 
@@ -153,7 +153,7 @@ int main()
 		else
 			cout << -1 * distance[N3 * N3 - 1] << endl;
 	}	
-	if (read_file("testcase4.txt", N4, edges4))
+	if (read_file("robot_testcase4.txt", N4, edges4))
 	{
 		vector<int> distance = BellmanFord(edges4, N4 * N4, 0);
 
@@ -162,7 +162,7 @@ int main()
 		else
 			cout << -1 * distance[N4 * N4 - 1] << endl;
 	}	
-	if (read_file("testcase5.txt", N5, edges5))
+	if (read_file("robot_testcase5.txt", N5, edges5))
 	{
 		vector<int> distance = BellmanFord(edges5, N5 * N5, 0);
 
